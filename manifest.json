@@ -1,0 +1,12 @@
+{
+  "name": "IWinit — Deals, Freebies & Ways to Earn",
+  "short_name": "IWinit",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1565D8",
+  "description": "Daily deals, discount codes, freebies, student deals, jobs and giveaways in one place.",
+  "icons": [
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
