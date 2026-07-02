@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Offer Details - Referral Hub</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Offer Details</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -18,34 +18,28 @@
 
 <main class="offer-page">
 
-    
+    <span class="offer-category" id="category"></span>
 
-    <span class="offer-category">Insurance</span>
-
-    <h1>Life Insurance Referral</h1>
+    <h1 id="title"></h1>
 
     <div class="reward-card">
         <h2>Reward</h2>
-        <p>R500 per approved referral</p>
+        <p id="reward"></p>
     </div>
 
     <section>
-        <h2>How it works</h2>
-        <ol>
-            <li>Submit someone interested in life insurance.</li>
-            <li>We contact the customer.</li>
-            <li>They complete the application.</li>
-            <li>If approved, you earn your referral reward.</li>
-        </ol>
+        <h2>Description</h2>
+        <p id="description"></p>
+    </section>
+
+    <section>
+        <h2>How it Works</h2>
+        <ol id="steps"></ol>
     </section>
 
     <section>
         <h2>Requirements</h2>
-        <ul>
-            <li>Must be 18 years or older.</li>
-            <li>Must live in South Africa.</li>
-            <li>Must not already have this policy.</li>
-        </ul>
+        <ul id="requirements"></ul>
     </section>
 
     <a href="submit.html" class="primary-btn">
@@ -53,6 +47,35 @@
     </a>
 
 </main>
+
+<script src="script.js"></script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+const offer = OFFERS.find(o => o.id === id);
+
+if (offer) {
+
+    document.getElementById("category").textContent = offer.category;
+    document.getElementById("title").textContent = offer.title;
+    document.getElementById("reward").textContent = offer.reward;
+    document.getElementById("description").textContent = offer.desc;
+
+    document.getElementById("steps").innerHTML =
+        offer.steps.map(step => `<li>${step}</li>`).join("");
+
+    document.getElementById("requirements").innerHTML =
+        offer.requirements.map(req => `<li>${req}</li>`).join("");
+
+} else {
+
+    document.querySelector(".offer-page").innerHTML =
+        "<h2>Offer not found.</h2>";
+
+}
+</script>
 
 </body>
 </html>
