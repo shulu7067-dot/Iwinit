@@ -30,7 +30,7 @@ const OFFERS = [
     category: 'Referral Program',
     title: 'Insurance & Tracker Referrals',
     reward: 'R350',
-    desc: 'Know someone looking for insurance or a vehicle tracker? Refer them and earn R500 for every successful referral. No registration is required.',
+    desc: 'Know someone looking for insurance or a vehicle tracker? Refer them and earn R350 for every successful referral. No registration is required.',
 
     payment: 'Insurance: Paid within 7 days after the first successful admin fee debit. Tracker: Paid within 24 hours after the installation certificate is received.',
 
