@@ -660,7 +660,49 @@ a { color: inherit; }
   background: #1d4ed8;
 }
 
+/* ---------- FAQ Section ---------- */
 
+details {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+summary {
+  padding: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  content: "−";
+}
+
+details p {
+  padding: 0 16px 16px;
+  margin: 0;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
 /* ---------- Responsive ---------- */
 
 @media (max-width: 768px) {
