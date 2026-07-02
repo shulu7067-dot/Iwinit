@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Your Lead — Referral Hub</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html"><span class="mark"></span>Referral Hub</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home / Leads</a></li>
+      <li><a href="track.html" aria-current="page">Track Lead</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="panel-narrow">
+  <div class="card">
+    <span class="eyebrow">Track Your Referral</span>
+    <h1 style="font-size:1.4rem;">Enter your tracking code</h1>
+    <form class="track-form" id="trackForm">
+      <input type="text" id="trackingCode" placeholder="RF29384" required>
+      <button class="btn btn-primary" type="submit" style="flex:0 0 auto; padding:12px 20px;">Track</button>
+    </form>
+
+    <div id="trackResult" style="display:none; margin-top:22px; padding-top:18px; border-top:1px solid var(--line);">
+      <span class="eyebrow">Status</span>
+      <p style="font-family:var(--font-mono); font-size:0.85rem; margin:0 0 4px;">Tracking Code: <strong id="resultCode"></strong></p>
+      <ul class="status-list">
+        <li class="done"><span class="dot">✓</span> Received</li>
+        <li class="done"><span class="dot">✓</span> Sent to Company</li>
+        <li class="pending"><span class="dot">⏳</span> Under Review</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  © 2026 Referral Hub. Earn commissions for approved referrals.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

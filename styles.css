@@ -1,0 +1,504 @@
+/* ===========================================================
+   Referral Hub — design tokens
+   Palette: deep pine ink / soft paper / earned-money teal & amber
+   Type: Space Grotesk (display) + Inter (body) + IBM Plex Mono (money & codes)
+   Signature: reward amounts render as a perforated payout stub
+=========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+:root {
+  --ink: #14231C;
+  --ink-soft: #45524B;
+  --paper: #F5F6F2;
+  --panel: #FFFFFF;
+  --line: #DCE1D8;
+  --teal: #1F6E4F;
+  --teal-dark: #16523A;
+  --amber: #D99A2B;
+  --amber-soft: #FBEED4;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(20,35,28,0.06), 0 8px 24px rgba(20,35,28,0.05);
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  margin: 0 0 0.4em;
+  letter-spacing: -0.01em;
+}
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ---------- Header / Nav ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.logo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo .mark {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: var(--teal);
+  display: inline-block;
+  position: relative;
+}
+.logo .mark::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+.nav-links {
+  display: flex;
+  gap: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  padding: 8px 14px;
+  border-radius: 7px;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
+  background: var(--teal);
+  color: #fff;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 8px 10px;
+  font-size: 1rem;
+}
+
+/* ---------- Banner ---------- */
+
+.banner {
+  max-width: 1120px;
+  margin: 20px auto 0;
+  padding: 0 24px;
+}
+.banner-slot {
+  border: 1px dashed var(--line);
+  border-radius: var(--radius);
+  background: var(--panel);
+  color: var(--ink-soft);
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 22px;
+}
+
+/* ---------- Page intro ---------- */
+
+.page-intro {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 36px 24px 8px;
+}
+.page-intro h1 { font-size: 1.9rem; }
+.page-intro p { color: var(--ink-soft); max-width: 60ch; }
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ---------- Controls ---------- */
+
+.controls {
+  max-width: 1120px;
+  margin: 20px auto 0;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.controls input[type="search"] {
+  flex: 1 1 240px;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  background: var(--panel);
+}
+
+.controls select {
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
+.results-count {
+  max-width: 1120px;
+  margin: 14px auto 0;
+  padding: 0 24px;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  font-family: var(--font-mono);
+}
+
+/* ---------- Offer grid ---------- */
+
+.offer-grid {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 18px 24px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.offer-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.offer-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(20,35,28,0.08), 0 14px 28px rgba(20,35,28,0.08);
+}
+
+.offer-top {
+  padding: 18px 18px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.offer-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: var(--amber-soft);
+  color: var(--teal-dark);
+  font-family: var(--font-display);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.offer-category {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.offer-body { padding: 12px 18px 4px; }
+.offer-body h3 { font-size: 1.08rem; }
+.offer-body p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+/* Signature element: perforated payout stub showing the reward */
+.stub {
+  margin: 14px 18px 0;
+  display: flex;
+  align-items: center;
+  border-top: 1px dashed var(--line);
+  position: relative;
+}
+.stub::before,
+.stub::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.stub::before { left: -25px; }
+.stub::after { right: -25px; }
+
+.stub-earn {
+  flex: 1;
+  padding: 12px 0;
+}
+.stub-earn .label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  display: block;
+}
+.stub-earn .amount {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--teal-dark);
+}
+
+.stub-terms {
+  flex: 1;
+  padding: 12px 0;
+  border-left: 1px dashed var(--line);
+  padding-left: 14px;
+}
+.stub-terms .label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  display: block;
+}
+.stub-terms .value {
+  font-size: 0.82rem;
+  color: var(--ink);
+}
+
+.offer-actions {
+  margin-top: auto;
+  padding: 16px 18px 18px;
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.86rem;
+  padding: 10px 14px;
+  border-radius: 7px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  flex: 1;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+.btn-primary {
+  background: var(--teal);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--teal-dark); }
+.btn-secondary {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.btn-secondary:hover { border-color: var(--teal); color: var(--teal-dark); }
+
+.no-results {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  text-align: center;
+  color: var(--ink-soft);
+  display: none;
+}
+
+/* ---------- Simple content pages (Track / About / Contact) ---------- */
+
+.panel-narrow {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 26px;
+}
+
+.track-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+.track-form input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.status-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.status-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: var(--paper);
+}
+.status-list li.done { color: var(--teal-dark); }
+.status-list li .dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  flex-shrink: 0;
+  background: var(--teal);
+  color: #fff;
+}
+.status-list li.pending .dot { background: var(--amber); }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+.contact-form label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-soft);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 11px 13px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  resize: vertical;
+}
+
+.contact-alt {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+.contact-alt strong { font-family: var(--font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); }
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 24px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 720px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    padding: 10px 24px 16px;
+    display: none;
+  }
+  .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+  .stub { flex-direction: column; align-items: stretch; }
+  .stub::before, .stub::after { display: none; }
+  .stub-terms { border-left: none; border-top: 1px dashed var(--line); padding-left: 0; margin-top: 4px; }
+}
