@@ -44,7 +44,7 @@ const OFFERS = [{
     'Must live in South Africa.',
     'Must own or be buying a home.'
   ]
-}
+},
   {
     id: 'solar',
     company: 'SunGrid',
