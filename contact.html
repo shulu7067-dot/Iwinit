@@ -23,23 +23,34 @@
 
 <section class="panel-narrow">
   <div class="card">
-    <span class="eyebrow">Get In Touch</span>
-    <h1 style="font-size:1.4rem;">Send us a message</h1>
-    <form class="contact-form" id="contactForm">
-      <label>Name
-        <input type="text" id="cName" required>
-      </label>
-      <label>Email
-        <input type="email" id="cEmail" required>
-      </label>
-      <label>WhatsApp
-        <input type="tel" id="cWhatsapp">
-      </label>
-      <label>Message
-        <textarea id="cMessage" rows="4" required></textarea>
-      </label>
-      <button class="btn btn-primary" type="submit">Send via WhatsApp</button>
-    </form>
+  <span class="eyebrow">Get In Touch</span>
+<h1 style="font-size:1.4rem;">Send us a message</h1>
+
+<form class="contact-form"
+      action="https://formspree.io/f/mykqbyww"
+      method="POST">
+
+  <label>Name
+    <input type="text" name="name" required>
+  </label>
+
+  <label>Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>WhatsApp (Optional)
+    <input type="tel" name="whatsapp">
+  </label>
+
+  <label>Message
+    <textarea name="message" rows="4" required></textarea>
+  </label>
+
+  <button class="btn btn-primary" type="submit">
+    Send Message
+  </button>
+
+</form>
 
     <div class="contact-alt">
       <div><strong>WhatsApp</strong><br>+27 65 779 3861</div>
