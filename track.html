@@ -30,16 +30,25 @@
       <button class="btn btn-primary" type="submit" style="flex:0 0 auto; padding:12px 20px;">Track</button>
     </form>
 
-    <div id="trackResult" style="display:none; margin-top:22px; padding-top:18px; border-top:1px solid var(--line);">
-      <span class="eyebrow">Status</span>
-      <p style="font-family:var(--font-mono); font-size:0.85rem; margin:0 0 4px;">Tracking Code: <strong id="resultCode"></strong></p>
-      <ul class="status-list">
-        <li class="done"><span class="dot">✓</span> Received</li>
-        <li class="done"><span class="dot">✓</span> Sent to Company</li>
-        <li class="pending"><span class="dot">⏳</span> Under Review</li>
-      </ul>
-    </div>
+ <div id="trackResult" style="display:none; margin-top:22px;">
+
+  <h2>Referral Status</h2>
+
+  <p><strong>Tracking Code:</strong> <span id="resultCode"></span></p>
+
+  <p><strong>Offer:</strong> <span id="resultOffer"></span></p>
+
+  <p><strong>Status:</strong> <span id="resultStatus"></span></p>
+
+  <p><strong>Last Updated:</strong> <span id="resultUpdated"></span></p>
+
+</div>
+
+<div id="notFound" style="display:none; margin-top:20px;">
+  <p>No referral was found with that tracking code.</p>
+</div>
   </div>
+  
 </section>
 
 <footer class="site-footer">
