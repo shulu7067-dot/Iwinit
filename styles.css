@@ -138,18 +138,29 @@ a { color: inherit; }
 /* ---------- Banner ---------- */
 
 .banner {
-  max-width: 1120px;
-  margin: 20px auto 0;
-  padding: 0 24px;
+    max-width: 728px;
+    margin: 1.5rem auto;
+    padding: 0 20px;
 }
-.banner-slot {
-  border: 1px dashed var(--line);
-  border-radius: var(--radius);
-  background: var(--panel);
-  color: var(--ink-soft);
-  font-size: 0.8rem;
-  text-align: center;
-  padding: 22px;
+
+.banner-link {
+    display: block;
+    border-radius: 18px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    transition: transform .25s ease;
+}
+
+.banner-link:hover {
+    transform: translateY(-3px);
+}
+
+.banner-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
 }
 
 /* ---------- Page intro ---------- */
