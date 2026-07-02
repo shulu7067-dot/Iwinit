@@ -23,77 +23,33 @@ function generateTrackingCode() {
 }
 
 // ---- Home / Leads page ----
-const OFFERS = [{
-  id: 'insurance-tracker-referral',
-  company: 'Insurance & Tracker Services',
-  category: 'Referral Program',
-  title: 'Insurance & Tracker Referrals',
-  reward: 'R350',
-  desc: 'Know someone looking for insurance or a vehicle tracker? Refer them and earn R500 for every successful referral. No registration is required.',
-
-  payment: 'Insurance: Paid within 7 days after the first successful admin fee debit. Tracker: Paid within 24 hours after the installation certificate is received.',
-
-  steps: [
-    'Speak to the client and obtain their permission before sharing their details.',
-    'Submit the client\'s full name, surname, contact number and the service they are interested in.',
-    'A consultant will be assigned to the referral and will contact the client.',
-    'You will receive updates on the progress of your referral.',
-    'If the client successfully takes the insurance policy and the first admin fee is debited, you earn R350.',
-    'If the client has a tracker installed, payment is made after the installation certificate is received (usually within 24 hours of installation).'
-  ],
-
-  requirements: [
-    'The client must have given permission for their details to be shared.',
-    'The client must be expecting a call from a consultant.',
-    'Insurance referrals only qualify once the first admin fee has been successfully debited.',
-    'Tracker referrals only qualify once the tracker has been installed and the installation certificate has been received.',
-    'Referral payments are made only for successful referrals.'
-  ]
-}];
+const OFFERS = [
   {
-    id: 'solar',
-    company: 'SunGrid',
-    category: 'Energy',
-    title: 'Solar Installation',
+    id: 'insurance-tracker-referral',
+    company: 'Insurance & Tracker Services',
+    category: 'Referral Program',
+    title: 'Insurance & Tracker Referrals',
     reward: 'R350',
-    desc: 'Refer households or small businesses exploring solar or backup power.',
-    payment: 'Within 10 business days'
-  },
-  {
-    id: 'vehicle-finance',
-    company: 'DriveCap',
-    category: 'Finance',
-    title: 'Vehicle Finance',
-    reward: 'R400',
-    desc: 'Need people looking for vehicle finance or refinancing options.',
-    payment: 'Within 14 days after approval'
-  },
-  {
-    id: 'fibre',
-    company: 'LinkFibre',
-    category: 'Telecoms',
-    title: 'Fibre Internet Signups',
-    reward: 'R150',
-    desc: 'Refer homes in fibre-covered areas looking to switch or install fibre.',
-    payment: 'Within 7 business days'
-  },
-  {
-    id: 'medical-aid',
-    company: 'CarePlan',
-    category: 'Insurance',
-    title: 'Medical Aid Switches',
-    reward: 'R350',
-    desc: 'Connect individuals or families comparing medical aid schemes.',
-    payment: 'Within 14 business days'
-  },
-  {
-    id: 'business-loan',
-    company: 'CapitalWorks',
-    category: 'Finance',
-    title: 'Small Business Loans',
-    reward: 'R600',
-    desc: 'Refer registered businesses looking for working capital or expansion funding.',
-    payment: 'Within 21 days after approval'
+    desc: 'Know someone looking for insurance or a vehicle tracker? Refer them and earn R500 for every successful referral. No registration is required.',
+
+    payment: 'Insurance: Paid within 7 days after the first successful admin fee debit. Tracker: Paid within 24 hours after the installation certificate is received.',
+
+    steps: [
+      'Speak to the client and obtain their permission before sharing their details.',
+      'Submit the client\'s full name, surname, contact number and the service they are interested in.',
+      'A consultant will be assigned to the referral and will contact the client.',
+      'You will receive updates on the progress of your referral.',
+      'If the client successfully takes the insurance policy and the first admin fee is debited, you earn R350.',
+      'If the client has a tracker installed, payment is made after the installation certificate is received (usually within 24 hours of installation).'
+    ],
+
+    requirements: [
+      'The client must have given permission for their details to be shared.',
+      'The client must be expecting a call from a consultant.',
+      'Insurance referrals only qualify once the first admin fee has been successfully debited.',
+      'Tracker referrals only qualify once the tracker has been installed and the installation certificate has been received.',
+      'Referral payments are made only for successful referrals.'
+    ]
   }
 ];
 const REFERRALS = [
@@ -155,13 +111,9 @@ function renderOffers(list) {
         </div>
       </div>
       <div class="offer-actions">
-     <a class="btn btn-primary" href="submit.html?offer=${offer.id}">
-    Submit Lead
-</a>
-
-<a href="offer.html?id=${offer.id}" class="secondary-btn">
-    Read More
-</a> </div>
+        <a class="btn btn-primary" href="submit.html?offer=${offer.id}">Submit Lead</a>
+        <a class="btn btn-secondary" href="offer.html?id=${offer.id}">Read More</a>
+      </div>
     `;
     grid.appendChild(card);
   });

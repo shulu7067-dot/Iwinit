@@ -1,65 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submit a Lead — IWINIT</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="logo" href="index.html"><span class="mark"></span>IWINIT</a>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home / Leads</a></li>
+      <li><a href="track.html">Track Lead</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="form-container">
+
+  <h1>Submit a Lead</h1>
+  <p>You're submitting a referral for: <strong id="offerDisplay">General Referral</strong></p>
+
+  <form id="leadForm" action="https://formspree.io/f/mykqbyww" method="POST">
+
+    <!-- This is what actually gets sent to Formspree -->
+    <input type="hidden" name="Offer" id="selectedOffer" value="General Referral">
+    <input type="hidden" name="_subject" id="emailSubject" value="New Lead Submission">
+
+    <h2>Your Details</h2>
+
+    <label>Your Full Name
+      <input type="text" name="Your Name" required>
+    </label>
+
+    <label>Your WhatsApp Number
+      <input type="tel" name="Your Phone" required>
+    </label>
+
+    <h2>Client Details</h2>
+
+    <label>Client Full Name
+      <input type="text" name="Client Name" required>
+    </label>
+
+    <label>Client Surname
+      <input type="text" name="Client Surname" required>
+    </label>
+
+    <label>Client Contact Number
+      <input type="tel" name="Client Phone" required>
+    </label>
+
+    <label>Service the Client is Interested In
+      <select name="Service Interested In" required>
+        <option value="">Select an option</option>
+        <option value="Insurance">Insurance</option>
+        <option value="Vehicle Tracker">Vehicle Tracker</option>
+      </select>
+    </label>
+
+    <label>Additional Notes (optional)
+      <textarea name="Notes" rows="4"></textarea>
+    </label>
+
+    <button type="submit">Submit Referral</button>
+
+  </form>
+</div>
+
+<footer class="site-footer">
+  © 2026 IWINIT. Earn commissions for approved referrals.
+</footer>
+
+<script src="script.js"></script>
 <script>
-// Mobile menu
-const toggle = document.querySelector('.nav-toggle');
-const links = document.querySelector('.nav-links');
-
-if (toggle && links) {
-  toggle.addEventListener('click', () => {
-    links.classList.toggle('open');
-  });
-}
-
-// Get selected offer from URL
+// Auto-populate the offer this lead is being submitted for, based on the
+// "Submit Lead" button that was clicked (?offer=<id> in the URL).
 const params = new URLSearchParams(window.location.search);
 const offerId = params.get("offer");
+const offer = typeof OFFERS !== 'undefined' ? OFFERS.find(o => o.id === offerId) : null;
+const offerName = offer ? offer.title : "General Referral";
 
-// Same IDs as your OFFERS array
-const offerNames = {
-  "insurance-tracker-referral": "Insurance & Tracker Referrals"
-};
+document.getElementById("offerDisplay").textContent = offerName;
+document.getElementById("selectedOffer").value = offerName;
+document.getElementById("emailSubject").value = `New Lead — ${offerName}`;
 
-document.getElementById("selectedOffer").value =
-  offerNames[offerId] || "General Referral";
+// Submit form to Formspree, then send the user to a tracking confirmation
+document.getElementById("leadForm").addEventListener("submit", async function (e) {
+  e.preventDefault();
 
-// Submit form
-document.getElementById("leadForm").addEventListener("submit", async function(e){
-    e.preventDefault();
+  const form = e.target;
+  const trackingCode = generateTrackingCode();
 
-    const form = e.target;
-    const trackingCode = "RF" + Math.floor(10000 + Math.random() * 90000);
+  const hidden = document.createElement("input");
+  hidden.type = "hidden";
+  hidden.name = "Tracking Code";
+  hidden.value = trackingCode;
+  form.appendChild(hidden);
 
-    // Hidden tracking code
-    const hidden = document.createElement("input");
-    hidden.type = "hidden";
-    hidden.name = "trackingCode";
-    hidden.value = trackingCode;
-    form.appendChild(hidden);
+  const submitBtn = form.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Submitting…";
 
-    try {
-        const response = await fetch(form.action, {
-            method: "POST",
-            body: new FormData(form),
-            headers: {
-                "Accept": "application/json"
-            }
-        });
+  try {
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { "Accept": "application/json" }
+    });
 
-        if (response.ok) {
-            alert(`Referral submitted successfully!
-
-Tracking Code:
-${trackingCode}
-
-Please save this code to track your referral.`);
-
-            window.location.href =
-                `track.html?code=${trackingCode}`;
-        } else {
-            alert("Something went wrong. Please try again.");
-        }
-
-    } catch (err) {
-        alert("Unable to submit. Please check your internet connection.");
+    if (response.ok) {
+      alert(`Referral submitted successfully!\n\nTracking Code: ${trackingCode}\n\nPlease save this code to track your referral.`);
+      window.location.href = `track.html?code=${trackingCode}`;
+    } else {
+      alert("Something went wrong. Please try again.");
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Submit Referral";
     }
+  } catch (err) {
+    alert("Unable to submit. Please check your internet connection.");
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit Referral";
+  }
 });
 </script>
+
+</body>
+</html>

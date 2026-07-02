@@ -30,6 +30,9 @@
     <section>
         <h2>Description</h2>
         <p id="description"></p>
+        <a href="submit.html" id="submitLink" class="offer-submit">
+            Submit a Lead
+        </a>
     </section>
 
     <section>
@@ -41,10 +44,6 @@
         <h2>Requirements</h2>
         <ul id="requirements"></ul>
     </section>
-
-    <a href="submit.html" class="primary-btn">
-        Submit a Lead
-    </a>
 
 </main>
 
@@ -68,6 +67,8 @@ if (offer) {
 
     document.getElementById("requirements").innerHTML =
         offer.requirements.map(req => `<li>${req}</li>`).join("");
+
+    document.getElementById("submitLink").href = `submit.html?offer=${offer.id}`;
 
 } else {
 
