@@ -50,6 +50,33 @@ const OFFERS = [
       'Tracker referrals only qualify once the tracker has been installed and the installation certificate has been received.',
       'Referral payments are made only for successful referrals.'
     ]
+  },
+  {
+    id: 'tutoring',
+    company: 'Tutoring Referral Program',
+    category: 'Education',
+    title: 'Tutoring Referral Program',
+    reward: 'R50',
+    desc: 'Refer students who need tutoring for any grade and any school subject, including matric rewrite support.',
+
+    payment: 'Less than 24 hours after the referred student has paid for the tutoring services.',
+
+    steps: [
+      'Find a student who needs tutoring.',
+      'Obtain consent from the parent or the student (if they are old enough to provide it) before submitting their details.',
+      'Submit the referral through Referral Hub.',
+      'The tutoring provider contacts the parent or student to discuss their tutoring needs.',
+      'The student enrolls and pays for the tutoring service.',
+      'Your R50 referral reward is paid in less than 24 hours after the student\u2019s payment is confirmed.'
+    ],
+
+    requirements: [
+      'Consent must be obtained from the parent or the student before making the referral.',
+      'Available for learners in all grades.',
+      'Covers all school subjects.',
+      'Includes support for matric rewrite students.',
+      'Referrals must be genuine and based in South Africa.'
+    ]
   }
 ];
 const REFERRALS = [
