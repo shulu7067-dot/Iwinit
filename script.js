@@ -125,9 +125,13 @@ function renderOffers(list) {
         </div>
       </div>
       <div class="offer-actions">
-        <a class="btn btn-primary" href="${submitLeadUrl(offer.title, code)}" target="_blank" rel="noopener">Submit Lead</a>
-        <button class="btn btn-secondary" type="button" data-details="${offer.id}">Read More</button>
-      </div>
+     <a class="btn btn-primary" href="submit.html?offer=${offer.id}">
+    Submit Lead
+</a>
+
+<a class="btn btn-secondary" href="offer.html?id=${offer.id}">
+    Read More
+</a> </div>
     `;
     grid.appendChild(card);
   });
