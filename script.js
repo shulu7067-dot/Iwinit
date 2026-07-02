@@ -162,7 +162,7 @@ function renderOffers(list) {
     Submit Lead
 </a>
 
-<a class="btn btn-secondary" href="offer.html?id=${offer.id}">
+<a href="offer.html?id=${offer.id}" class="secondary-btn">
     Read More
 </a> </div>
     `;
