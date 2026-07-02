@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ---- Configuration you should edit ----
 // Put your own WhatsApp number here (international format, no + or spaces).
-const WHATSAPP_NUMBER = '27000000000';
+const WHATSAPP_NUMBER = '27656748964';
 
 function submitLeadUrl(offerTitle, trackingCode) {
   const msg = `Hi! I'd like to submit a referral lead for: ${offerTitle}\n\nTracking code: ${trackingCode}\nLead name: \nLead phone: \n`;
