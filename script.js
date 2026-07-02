@@ -79,7 +79,20 @@ const OFFERS = [
     payment: 'Within 21 days after approval'
   }
 ];
-
+const REFERRALS = [
+  {
+    code: "RF10234",
+    offer: "Home Insurance",
+    status: "🟡 Pending Review",
+    updated: "2 July 2026"
+  },
+  {
+    code: "RF10235",
+    offer: "Solar Installation",
+    status: "🟢 Approved",
+    updated: "3 July 2026"
+  }
+];
 function initials(name) {
   return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 }
@@ -176,21 +189,52 @@ if (document.getElementById('offerGrid')) {
 }
 
 // ---- Track Lead page ----
-const trackForm = document.getElementById('trackForm');
+
+const trackForm = document.getElementById("trackForm");
+
 if (trackForm) {
-  trackForm.addEventListener('submit', (e) => {
+
+  trackForm.addEventListener("submit", function (e) {
+
     e.preventDefault();
-    const code = document.getElementById('trackingCode').value.trim();
-    const resultBox = document.getElementById('trackResult');
-    if (!code) return;
 
-    // Demo logic: any code entered shows a sample status.
-    // Replace this with a real lookup once you have a backend.
-    document.getElementById('resultCode').textContent = code;
-    resultBox.style.display = 'block';
+    const code = document
+      .getElementById("trackingCode")
+      .value
+      .trim()
+      .toUpperCase();
+
+    const referral = REFERRALS.find(r => r.code === code);
+
+    const resultBox = document.getElementById("trackResult");
+    const notFound = document.getElementById("notFound");
+
+    if (referral) {
+
+      document.getElementById("resultCode").textContent = referral.code;
+      document.getElementById("resultOffer").textContent = referral.offer;
+      document.getElementById("resultStatus").textContent = referral.status;
+      document.getElementById("resultUpdated").textContent = referral.updated;
+
+      resultBox.style.display = "block";
+
+      if (notFound) {
+        notFound.style.display = "none";
+      }
+
+    } else {
+
+      resultBox.style.display = "none";
+
+      if (notFound) {
+        notFound.style.display = "block";
+      }
+
+    }
+
   });
-}
 
+}
 // ---- Contact page ----
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
