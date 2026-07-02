@@ -24,27 +24,34 @@ function generateTrackingCode() {
 
 // ---- Home / Leads page ----
 const OFFERS = [{
-  id: 'home-insurance',
-  company: 'Shieldpoint',
-  category: 'Insurance',
-  title: 'Home Insurance Leads',
-  reward: 'R250',
-  desc: 'Looking for homeowners interested in comparing buildings and contents cover.',
-  payment: 'Within 7 business days',
+  id: 'insurance-tracker-referral',
+  company: 'Referral Partner',
+  category: 'Insurance & Vehicle Tracker',
+  title: 'Insurance & Tracker Referral',
+  reward: 'R500',
+  desc: 'Refer clients interested in insurance or vehicle tracking services. No registration is required. Simply submit a qualified referral and earn R500 for every successful lead.',
+
+  payment: 'Insurance: 7 days after successful admin fee debit • Tracker: 24 hours after installation certificate is received',
+
+  website: 'https://abbrokers.co.za/',
 
   steps: [
-    'Submit a homeowner interested in insurance.',
-    'Our partner contacts the customer.',
-    'The customer receives a quotation.',
-    'If the lead qualifies, your reward is processed.'
+    'Get the client\'s permission before sharing their information (POPI compliance).',
+    'WhatsApp the client\'s name, surname, contact number and the product they are interested in.',
+    'A consultant will be allocated and your referral will be recorded under your name.',
+    'The consultant will contact the client and keep you updated on the progress.',
+    'Insurance: If the client takes the policy and the first admin fee is successfully debited, your R500 referral payment will be made within 7 days.',
+    'Tracker: If the tracker is installed, an installation certificate is received approximately 24 hours after fitment, then your R500 referral payment will be processed.'
   ],
 
   requirements: [
-    'Must be 18 years or older.',
-    'Must live in South Africa.',
-    'Must own or be buying a home.'
+    'The client must know you have shared their details (POPI compliant).',
+    'The client must be expecting a call.',
+    'Submit the client\'s full name, surname, contact number and product they are interested in.',
+    'No registration is required.',
+    'Referral payment is only made for successful referrals.'
   ]
-},
+}];
   {
     id: 'solar',
     company: 'SunGrid',
