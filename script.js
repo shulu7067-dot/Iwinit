@@ -23,36 +23,28 @@ function generateTrackingCode() {
 }
 
 // ---- Home / Leads page ----
-const OFFERS = [
-  {
-    id: 'home-insurance',
-    company: 'Shieldpoint',
-    category: 'Insurance',
-    title: 'Home Insurance Leads',
-    reward: 'R250',
-    desc: 'Looking for homeowners interested in comparing buildings and contents cover.',
-    payment: 'Within 7 business days'
-    steps: [
+const OFFERS = [{
+  id: 'home-insurance',
+  company: 'Shieldpoint',
+  category: 'Insurance',
+  title: 'Home Insurance Leads',
+  reward: 'R250',
+  desc: 'Looking for homeowners interested in comparing buildings and contents cover.',
+  payment: 'Within 7 business days',
 
+  steps: [
     'Submit a homeowner interested in insurance.',
-
     'Our partner contacts the customer.',
-
     'The customer receives a quotation.',
-
     'If the lead qualifies, your reward is processed.'
-
   ],
 
   requirements: [
-
     'Must be 18 years or older.',
-
     'Must live in South Africa.',
-
     'Must own or be buying a home.'
-  ],
-  },
+  ]
+}
   {
     id: 'solar',
     company: 'SunGrid',
