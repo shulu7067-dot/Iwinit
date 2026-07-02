@@ -25,31 +25,29 @@ function generateTrackingCode() {
 // ---- Home / Leads page ----
 const OFFERS = [{
   id: 'insurance-tracker-referral',
-  company: 'Referral Partner',
-  category: 'Insurance & Vehicle Tracker',
-  title: 'Insurance & Tracker Referral',
-  reward: 'R500',
-  desc: 'Refer clients interested in insurance or vehicle tracking services. No registration is required. Simply submit a qualified referral and earn R500 for every successful lead.',
+  company: 'Insurance & Tracker Services',
+  category: 'Referral Program',
+  title: 'Insurance & Tracker Referrals',
+  reward: 'R350',
+  desc: 'Know someone looking for insurance or a vehicle tracker? Refer them and earn R500 for every successful referral. No registration is required.',
 
-  payment: 'Insurance: 7 days after successful admin fee debit • Tracker: 24 hours after installation certificate is received',
-
-  website: 'https://abbrokers.co.za/',
+  payment: 'Insurance: Paid within 7 days after the first successful admin fee debit. Tracker: Paid within 24 hours after the installation certificate is received.',
 
   steps: [
-    'Get the client\'s permission before sharing their information (POPI compliance).',
-    'WhatsApp the client\'s name, surname, contact number and the product they are interested in.',
-    'A consultant will be allocated and your referral will be recorded under your name.',
-    'The consultant will contact the client and keep you updated on the progress.',
-    'Insurance: If the client takes the policy and the first admin fee is successfully debited, your R500 referral payment will be made within 7 days.',
-    'Tracker: If the tracker is installed, an installation certificate is received approximately 24 hours after fitment, then your R500 referral payment will be processed.'
+    'Speak to the client and obtain their permission before sharing their details.',
+    'Submit the client\'s full name, surname, contact number and the service they are interested in.',
+    'A consultant will be assigned to the referral and will contact the client.',
+    'You will receive updates on the progress of your referral.',
+    'If the client successfully takes the insurance policy and the first admin fee is debited, you earn R350.',
+    'If the client has a tracker installed, payment is made after the installation certificate is received (usually within 24 hours of installation).'
   ],
 
   requirements: [
-    'The client must know you have shared their details (POPI compliant).',
-    'The client must be expecting a call.',
-    'Submit the client\'s full name, surname, contact number and product they are interested in.',
-    'No registration is required.',
-    'Referral payment is only made for successful referrals.'
+    'The client must have given permission for their details to be shared.',
+    'The client must be expecting a call from a consultant.',
+    'Insurance referrals only qualify once the first admin fee has been successfully debited.',
+    'Tracker referrals only qualify once the tracker has been installed and the installation certificate has been received.',
+    'Referral payments are made only for successful referrals.'
   ]
 }];
   {
@@ -57,7 +55,7 @@ const OFFERS = [{
     company: 'SunGrid',
     category: 'Energy',
     title: 'Solar Installation',
-    reward: 'R500',
+    reward: 'R350',
     desc: 'Refer households or small businesses exploring solar or backup power.',
     payment: 'Within 10 business days'
   },
