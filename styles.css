@@ -171,7 +171,7 @@ a { color: inherit; }
 .page-intro {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 12px 24px 8px;
+  padding: 8px 24px 0;
 }
 .page-intro h1 { font-size: 1.9rem; }
 .page-intro p { color: var(--ink-soft); max-width: 60ch; }
@@ -182,14 +182,14 @@ a { color: inherit; }
   text-transform: uppercase;
   color: var(--teal-dark);
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 /* ---------- Controls ---------- */
 
 .controls {
   max-width: 1120px;
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   padding: 0 24px;
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +218,7 @@ a { color: inherit; }
 
 .results-count {
   max-width: 1120px;
-  margin: 14px auto 0;
+  margin: 8px auto 0;
   padding: 0 24px;
   font-size: 0.82rem;
   color: var(--ink-soft);
@@ -230,7 +230,7 @@ a { color: inherit; }
 .offer-grid {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 18px 24px 60px;
+  padding: 10px 24px 60px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 18px;
