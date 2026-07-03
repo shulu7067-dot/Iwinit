@@ -108,7 +108,7 @@ const OFFERS = [
     category: 'Finance',
     title: 'Loan Referral Program',
     reward: 'R50',
-    desc: 'Earn R80 by referring a client who successfully takes out a loan.',
+    desc: 'Earn R50 by referring a client who successfully takes out a loan.',
 
     payment: 'After the client\'s loan has been approved and paid out.',
 
