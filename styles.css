@@ -142,7 +142,7 @@ a { color: inherit; }
 
 .banner {
     max-width: 728px;
-    margin: 1.5rem auto;
+    margin: 1.5rem auto 0;
     padding: 0 20px;
 }
 
@@ -171,7 +171,7 @@ a { color: inherit; }
 .page-intro {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 36px 24px 8px;
+  padding: 12px 24px 8px;
 }
 .page-intro h1 { font-size: 1.9rem; }
 .page-intro p { color: var(--ink-soft); max-width: 60ch; }
