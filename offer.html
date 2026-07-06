@@ -77,38 +77,9 @@ if (offer) {
 
     const applyButton = document.getElementById("applyLink");
 
-    applyButton.href = offer.link;
+    applyButton.href = offer.applyUrl;
 
-    switch (offer.category) {
-
-        case "Jobs":
-            applyButton.textContent = "Apply Now";
-            break;
-
-        case "Bursaries":
-            applyButton.textContent = "Apply for Bursary";
-            break;
-
-        case "Competitions":
-            applyButton.textContent = "Enter Competition";
-            break;
-
-        case "Discounts":
-            applyButton.textContent = "Get Discount";
-            break;
-
-        case "Referral Programs":
-            applyButton.textContent = "Read More";
-            break;
-
-        case "Business":
-            applyButton.textContent = "Learn More";
-            break;
-
-        default:
-            applyButton.textContent = "Read More";
-    }
-
+  applyButton.textContent = offer.buttonText || "Read More";
 } else {
 
     document.querySelector(".offer-page").innerHTML =
