@@ -36,7 +36,7 @@ const OFFERS = [
     payment: 'Commission payments are made every Wednesday and Friday via EFT or eWallet.',
 
     buttonText: 'Sign Up',
-    applyUrl: 'https://www.streetscout.co.za/',
+    applyUrl: 'https://streetscout.co.za/register?ref=39CU7NUH',
 
     steps: [
       'Earn R250 for submitting a qualified property lead (property address and owner\u2019s contact details).',
