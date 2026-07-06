@@ -1,0 +1,66 @@
+/* ===========================================================
+   RESPONSIVE.CSS
+   Breakpoint-specific rules. This file is currently dedicated
+   to the Advertisement Containers, keeping every ad unit
+   centered and contained on any screen size without ever
+   forcing the page itself to overflow horizontally.
+=========================================================== */
+
+/* ---------- Advertisement Containers ---------- */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .ad-container{
+    margin: 28px auto;
+  }
+
+  .offer-page .ad-container{
+    margin: 22px auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .ad-container{
+    margin: 22px auto;
+    padding: 0 12px;
+  }
+
+  .offer-page .ad-container{
+    margin: 18px auto;
+  }
+
+  .offer-page .ad-container + section{
+    margin-top: 18px;
+  }
+
+  .offer-page section + .ad-container{
+    margin-top: 6px;
+  }
+
+  /* Ads wider than a phone screen scroll neatly inside their
+     own box instead of pushing the page wider. */
+  .ad-728x90 .ad-slot,
+  .ad-468x60 .ad-slot{
+    margin: 0 auto;
+  }
+
+  .ad-native .ad-slot{
+    max-width: 100%;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+
+  .ad-container{
+    margin: 16px auto;
+    padding: 0 8px;
+  }
+
+  .offer-page .ad-container{
+    margin: 14px auto;
+  }
+}

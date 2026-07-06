@@ -557,8 +557,8 @@ a { color: inherit; }
 }
 
 .offer-page section{
-    margin-top:45px;
-    padding-top:30px;
+    margin-top:36px;
+    padding-top:24px;
     border-top:1px solid #edf2f7;
 }
 
@@ -608,6 +608,62 @@ a { color: inherit; }
     width:100%;
     display:block;
     border-radius:12px;
+}
+
+/* =====================================================
+   ADVERTISEMENT CONTAINERS
+   Reusable, size-based wrappers for Adsterra ad units.
+   Base rules live here; breakpoint overrides live in
+   responsive.css.
+===================================================== */
+
+.ad-container{
+    width:100%;
+    max-width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    overflow-x:auto;
+    overflow-y:hidden;
+    margin:32px auto;
+}
+
+.ad-container::-webkit-scrollbar{
+    height:0;
+}
+
+.ad-slot{
+    flex-shrink:0;
+    margin:0 auto;
+    line-height:0;
+}
+
+/* Reusable banner-size classes */
+
+.ad-728x90 .ad-slot{ width:728px; min-height:90px; }
+.ad-468x60 .ad-slot{ width:468px; min-height:60px; }
+.ad-320x50 .ad-slot{ width:320px; min-height:50px; }
+.ad-320x100 .ad-slot{ width:320px; min-height:100px; }
+.ad-300x250 .ad-slot{ width:300px; min-height:250px; }
+.ad-300x600 .ad-slot{ width:300px; min-height:600px; }
+.ad-160x600 .ad-slot{ width:160px; min-height:600px; }
+.ad-160x300 .ad-slot{ width:160px; min-height:300px; }
+
+/* Native / zone ads without a fixed pixel size */
+.ad-native .ad-slot{ width:100%; max-width:728px; text-align:center; }
+
+/* Tidy up spacing so ads never stack awkwardly against
+   the offer page's section dividers */
+.offer-page .ad-container{
+    margin:24px auto;
+}
+
+.offer-page .ad-container + section{
+    margin-top:24px;
+}
+
+.offer-page section + .ad-container{
+    margin-top:8px;
 }
 
 /* Apply Button */
