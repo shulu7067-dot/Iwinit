@@ -136,36 +136,50 @@ a { color: inherit; }
   border-radius: 7px;
   padding: 8px 10px;
   font-size: 1rem;
-}
-
-/* ---------- Banner ---------- */
-
-.banner {
-    max-width: 728px;
-    margin: 1.5rem auto 0;
-    padding: 0 20px;
-}
-
-.banner-link {
-    display: block;
-    border-radius: 18px;
-    overflow: hidden;
-    text-decoration: none;
-    box-shadow: 0 8px 24px rgba(0,0,0,.08);
-    transition: transform .25s ease;
-}
-
-.banner-link:hover {
-    transform: translateY(-3px);
-}
-
-.banner-image {
-    display: block;
+}/* ===== Moving Ticker ===== */
+.ticker-wrap {
     width: 100%;
-    height: auto;
-    border-radius: 18px;
+    overflow: hidden;
+    background: #0f172a;
+    color: #fff;
+    padding: 12px 0;
+    white-space: nowrap;
+    position: relative;
 }
 
+.ticker {
+    display: inline-flex;
+    align-items: center;
+    gap: 40px;
+    animation: ticker 20s linear infinite;
+}
+
+.ticker span {
+    font-size: 18px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.ticker:hover {
+    animation-play-state: paused;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .ticker span {
+        font-size: 16px;
+        gap: 25px;
+    }
+}
 /* ---------- Page intro ---------- */
 
 .page-intro {
