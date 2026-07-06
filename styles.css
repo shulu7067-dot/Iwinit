@@ -141,43 +141,29 @@ a { color: inherit; }
     width: 100%;
     overflow: hidden;
     background: #0f172a;
-    color: #fff;
+    color: white;
     padding: 12px 0;
-    white-space: nowrap;
-    position: relative;
 }
 
 .ticker {
-    display: inline-flex;
-    align-items: center;
-    gap: 40px;
-    animation: ticker 20s linear infinite;
+    display: flex;
+    width: max-content;
+    animation: ticker 15s linear infinite;
 }
 
 .ticker span {
+    flex-shrink: 0;
+    margin-right: 50px;
     font-size: 18px;
     font-weight: 600;
-    flex-shrink: 0;
-}
-
-.ticker:hover {
-    animation-play-state: paused;
 }
 
 @keyframes ticker {
     from {
-        transform: translateX(100%);
+        transform: translateX(0);
     }
     to {
-        transform: translateX(-100%);
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .ticker span {
-        font-size: 16px;
-        gap: 25px;
+        transform: translateX(-50%);
     }
 }
 /* ---------- Page intro ---------- */
