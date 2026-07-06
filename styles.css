@@ -747,3 +747,84 @@ details p {
   .stub::before, .stub::after { display: none; }
   .stub-terms { border-left: none; border-top: 1px dashed var(--line); padding-left: 0; margin-top: 4px; }
 }
+/* ==========================
+   Social Media Page
+========================== */
+
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 1.8rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 35px rgba(0,0,0,.12);
+}
+
+.card h2 {
+    margin-bottom: .8rem;
+    font-size: 1.4rem;
+    color: #0f172a;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.offer-submit {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: .8rem 1.4rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: .25s;
+}
+
+.offer-submit:hover {
+    background: #1d4ed8;
+}
+
+.page-intro {
+    max-width: 800px;
+    margin: 3rem auto 2rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.page-intro h1 {
+    font-size: 2rem;
+    margin: .5rem 0;
+    color: #0f172a;
+}
+
+.page-intro p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.eyebrow {
+    display: inline-block;
+    background: #dbeafe;
+    color: #2563eb;
+    padding: .35rem .9rem;
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
