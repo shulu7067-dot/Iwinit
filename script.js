@@ -102,6 +102,52 @@ const OFFERS = [
       'Advantageous: Advanced Excel skills.',
       'Advantageous: Experience in an operations environment.'
     ]
+  },
+  {
+    id: 'engen-business-development-specialist-mining',
+    type: 'job',
+    company: 'Engen Limited',
+    category: 'Jobs',
+    subcategory: 'Sales & Business Development',
+    title: 'Business Development Specialist – Mining',
+    location: 'Gauteng, South Africa',
+    employmentType: 'Full-time',
+    posted: '7 July 2026',
+    closingNote: 'Closes 5 days after posting date',
+    reward: 'Competitive salary \u2013 Engen salary scale',
+
+    desc: 'To drive relationships and business opportunities at new mining accounts where Engen has no presence. To build and manage a sustainable new business pipeline, and coordinate new tenders together with key business stakeholders.',
+
+    payment: 'Closes 5 days after posting \u2013 apply via the official Engen careers portal.',
+
+    buttonText: 'Apply Now',
+    applyUrl: 'https://careers.engenoil.com/job/Johannesburg-Business-Development-Specialist-Mining/1390307533/',
+
+    responsibilities: [
+      'Develop and implement a new business (hunter) strategy for the mining sector.',
+      'Liaise with key decision-makers at new mining operations, including mine managers, engineers and procurement.',
+      'Work with Engen Technical to run trials and product endorsements at new mining accounts.',
+      'Identify and drive new business opportunities in mining and associated segments (construction/industrial accounts, mining contractors).',
+      'Deliver on KPIs such as securing 2 new mining accounts per year and growing the mining pipeline.',
+      'Increase Engen\u2019s market share in the mining sector and drive strategic advantage over competitors (e.g. Fluidlink, IoT, CEM, VIP).',
+      'Drive call planning and account strategy for new mining accounts, working with Engen support teams to deliver KPIs.',
+      'Ability to travel nationally for extended periods as required by the role.'
+    ],
+
+    steps: [
+      'Click "Apply Now" to open the official Engen careers page for this role.',
+      'Complete and submit the online application with your CV and supporting documents before the closing date.',
+      'Applications are only considered if submitted via the official channel and manner requested.',
+      'Shortlisted candidates will be contacted by Engen for the next stage of the recruitment process.'
+    ],
+
+    requirements: [
+      'NQF Level 7 (Degree in Sales & Marketing / Engineering).',
+      '8 years\u2019 experience in Business Development within the mining business.',
+      'Advantageous: Degree in Marketing or Engineering.',
+      'Advantageous: Lubricants knowledge.',
+      'Advantageous: Experience dealing with mine managers.'
+    ]
   }
 ];
 const REFERRALS = [
