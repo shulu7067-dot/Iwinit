@@ -148,7 +148,109 @@ const OFFERS = [
       'Advantageous: Lubricants knowledge.',
       'Advantageous: Experience dealing with mine managers.'
     ]
-  }
+  }{
+  id: 'engen-fluidlink-engineer-mining',
+  type: 'job',
+  company: 'Engen Limited',
+  category: 'Jobs',
+  subcategory: 'Engineering',
+  title: 'Fluidlink Engineer – Mining',
+  location: 'Northern Cape, South Africa (Kathu, Kuruman & Hotazel Area)',
+  employmentType: 'Full-time',
+  posted: '7 July 2026',
+  closingNote: 'Closes 5 days after posting date',
+  reward: 'Competitive salary – Engen salary scale',
+
+  desc: 'Drive Engen Fluidlink Asset Performance Management (APM) services within mining and heavy industrial operations by improving equipment reliability, managing customer relationships, overseeing third-party service providers, and identifying opportunities to grow Fluidlink business across mining customers.',
+
+  payment: 'Closes 5 days after posting – apply via the official Engen careers portal.',
+
+  buttonText: 'Apply Now',
+  applyUrl: 'https://careers.engenoil.com/job/Johannesburg-Fluidlink-Engineer-Mining/1394973433/',
+
+  responsibilities: [
+    'Manage lubrication and fluid management programmes across mining operations to improve equipment reliability and production performance.',
+    'Control customer cost centre budgets, monitor KPIs, and maximise return on investment.',
+    'Conduct account reviews with customers and service providers, implementing corrective actions where necessary.',
+    'Identify reliability improvement opportunities through condition monitoring, contamination control, automation, and predictive maintenance.',
+    'Ensure compliance with Engen Fluidlink standards, mining regulations, engineering practices, and contractual agreements.',
+    'Build strong relationships with engineering, production, procurement, HSEQ, and supply chain teams at customer sites.',
+    'Manage third-party contractors to ensure SLA compliance, operational support, and safety performance.',
+    'Support business development by preparing technical proposals, value improvement analyses, RCFA insights, and customer presentations.',
+    'Conduct HSEQ engagements, safety audits, and ensure compliance with mine-specific health and safety requirements.',
+    'Continuously develop technical and commercial knowledge of mining reliability technologies and Engen Fluidlink solutions.'
+  ],
+
+  steps: [
+    'Click "Apply Now" to open the official Engen careers page.',
+    'Complete the online application and upload your CV together with the required supporting documents.',
+    'Submit your application before the closing date, as late applications will not be considered.',
+    'Shortlisted candidates will be contacted by Engen regarding the next stage of the recruitment process.'
+  ],
+
+  requirements: [
+    'NQF Level 7 qualification.',
+    'Minimum 5 years of experience within mining operations, processing plants, smelters, or heavy industrial facilities.',
+    'Strong exposure to asset reliability, production-critical equipment, and plant lubrication systems.',
+    'Advantageous: Certified Tribologist (SAIT).',
+    'Advantageous: Predictive Maintenance certifications (vibration, thermography, lubrication condition monitoring).',
+    'Advantageous: VE-CEM, VE-OCM, or VE-VIP certification.',
+    'Advantageous: SAMTRAC or Mining Supervisory HSEQ qualification.',
+    'Advantageous: Total Fluid Management experience within mining or industrial sectors.',
+    'Knowledge of the lubricants value chain, RCFA, and third-party contractor management.',
+    'Sales and marketing experience within technical or engineering environments is advantageous.'
+  ]
+},{
+  id: 'engen-accountant-supply-wholesale',
+  type: 'job',
+  company: 'Engen Limited',
+  category: 'Jobs',
+  subcategory: 'Finance',
+  title: 'Accountant',
+  location: 'Cape Town, South Africa',
+  employmentType: 'Full-time',
+  posted: '4 July 2026',
+  closingNote: 'Closes 5 days after posting date',
+  reward: 'Competitive salary – Engen salary scale',
+
+  desc: 'Manage international and local Supply & Wholesale commercial data, customer invoicing, and trading positions to ensure accurate financial accounting, reporting, and cost control. The role supports Engen’s profitability through effective management of trading transactions, treasury support, compliance, and financial reporting.',
+
+  payment: 'Closes 5 days after posting – apply via the official Engen careers portal.',
+
+  buttonText: 'Apply Now',
+  applyUrl: 'https://careers.engenoil.com/job/Cape-Town-Accountant/1411506333/',
+
+  responsibilities: [
+    'Record and settle international and local trading transactions, including imports, exports, affiliates, marine, third-party, and local buy/sell deals.',
+    'Capture vendor invoices, schedule payments, and ensure accurate customer invoicing in accordance with pricing terms.',
+    'Account accurately for import duties, customs and excise levies, and other applicable charges.',
+    'Prepare debit and credit notes and ensure timely customer billing.',
+    'Maintain accurate weighted average costing and transfer costs to the Marketing division.',
+    'Prepare monthly debtor and creditor reconciliations and clear customer, vendor, and GR/IR accounts.',
+    'Support international trading activities by accurately capturing deals within the ETRM system.',
+    'Provide treasury support by ensuring trading deals are appropriately hedged and included in daily exposure reports.',
+    'Monitor departmental expenditure, manage cost controls, and report on budget variances.',
+    'Prepare monthly and ad hoc financial reports while ensuring compliance with company policies, procedures, and audit requirements.'
+  ],
+
+  steps: [
+    'Click "Apply Now" to open the official Engen careers page.',
+    'Complete the online application and upload your CV together with the required supporting documents.',
+    'Submit your application before the closing date as only applications received through the official careers portal will be considered.',
+    'Shortlisted candidates will be contacted by Engen regarding the next stage of the recruitment process.'
+  ],
+
+  requirements: [
+    'NQF Level 7 qualification (Degree in Commercial, Finance, or Accounting).',
+    'Minimum 5 years of experience in an Accounting or Finance environment.',
+    'Experience and knowledge of an Energy Trading and Risk Management (ETRM) system.',
+    'Strong financial accounting, reconciliation, and reporting skills.',
+    'Knowledge of international and local trading transactions.',
+    'Experience with treasury support, budgeting, and cost control.',
+    'Advantageous: Experience and knowledge of SAP.',
+    'Ability to ensure compliance with governance, audit, and financial control requirements.'
+  ]
+},
 ];
 const REFERRALS = [
   {
