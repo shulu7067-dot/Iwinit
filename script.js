@@ -56,37 +56,6 @@ const OFFERS = [
     ]
   },
   {
-  id: 'temu-affiliate',
-  company: 'Temu',
-  category: 'Referral Program',
-  subcategory: 'Affiliate Marketing',
-  title: 'Temu Affiliate Program',
-  reward: 'Up to 30% Commission',
-
-  desc: 'Join the Temu Affiliate Program and earn commissions by referring new affiliates. Share your invitation link or invitation code and receive rewards when eligible users successfully register and qualify.',
-
-  payment: 'Commission and promotional rewards are paid according to Temu Affiliate Program terms and campaign conditions.',
-
-  buttonText: 'Sign Up',
-  applyUrl: 'https://www.temu.com/affiliate_article_center.html?_bg_fs=1&_x_ads_channel=kol_affiliate&_x_vst_scene=adg&_x_campaign=affiliate&_x_cid=4063237254kol_affiliate&_x_share_id=&_x_adg_shr_id=46d632fad47149eca46ec13a44e824ec&_x_ads_csite=share&_x_ns_adg_stid=5af027286fda4fcd_nm8xevc&_x_sessn_id=pxunhk4wm3&refer_page_name=affiliate_coin&refer_page_id=24745_1783410546422_kc62cc4fbc&refer_page_sn=24745',
-
-  steps: [
-    'Create or sign in to your Temu account.',
-    'Join the Temu Affiliate Program.',
-    'Share your affiliate invitation link with others.',
-    'If needed, users can enter your invitation code: inb154757.',
-    'Earn commission and promotional rewards when eligible referrals successfully register and meet Temu requirements.'
-  ],
-
-  requirements: [
-    'A valid Temu account is required.',
-    'Only genuine referrals qualify.',
-    'Rewards are subject to Temu Affiliate Program terms.',
-    'Commission is earned after qualifying referral actions are completed.',
-    'Invitation Code: inb154757'
-  ]
-},
-  {
     id: 'engen-business-planning-analysis-manager',
     type: 'job',
     company: 'Engen Limited',
@@ -133,59 +102,7 @@ const OFFERS = [
       'Advantageous: Advanced Excel skills.',
       'Advantageous: Experience in an operations environment.'
     ]
-  },{
-  id: 'ackermans-hr-administrator-maternity-cover',
-  type: 'job',
-  company: 'Ackermans',
-  category: 'Jobs',
-  subcategory: 'Human Resources',
-  title: 'HR Administrator (4-Month Maternity Cover)',
-  location: 'Ackermans Support Centre, South Africa',
-  employmentType: 'Contract (4 Months)',
-  posted: '7 July 2026',
-  closingNote: 'Apply as soon as possible',
-  reward: 'Market-related salary and employee benefits',
-
-  desc: 'Join the Ackermans HR team to provide administrative support across multiple business units. You will assist with HR operations, maintain employee records, support people initiatives, and ensure excellent service delivery while helping execute HR strategies.',
-
-  payment: 'Applications are submitted through the official Ackermans careers portal.',
-
-  buttonText: 'Apply Now',
-  applyUrl: 'https://careers.ackermans.co.za/jobs/8006020-hr-administrator-4-month-maternity-cover',
-
-  responsibilities: [
-    'Provide administrative support to the HR department across multiple business units.',
-    'Maintain personnel records and ensure compliance with the POPI Act.',
-    'Support HR processes using HR Information Systems (HRIS).',
-    'Assist with HR initiatives and provide excellent service to internal and external stakeholders.',
-    'Handle confidential employee information with professionalism and integrity.',
-    'Assist with payroll and recruitment administration where required.',
-    'Prepare HR documentation, reports, and correspondence accurately and on time.',
-    'Build positive working relationships with employees and managers.',
-    'Ensure HR administrative processes are completed efficiently and accurately.',
-    'Support the HR team with general administrative duties and special projects.'
-  ],
-
-  steps: [
-    'Click "Apply Now" to open the official Ackermans careers page.',
-    'Complete the online application form and upload your CV together with the required supporting documents.',
-    'Review your application to ensure all information is correct before submitting.',
-    'Only shortlisted candidates will be contacted regarding the next stage of the recruitment process.'
-  ],
-
-  requirements: [
-    'Grade 12 (Matric).',
-    'Minimum of 1–2 years of experience in an HR administrative or support role.',
-    'Knowledge of HR best practices, personnel files, and the POPI Act.',
-    'Experience using HR Information Systems (HRIS).',
-    'Payroll and recruitment systems experience is advantageous.',
-    'Proficiency in Microsoft Word, Excel, PowerPoint, and Outlook.',
-    'Excellent written and verbal communication skills in English.',
-    'Ability to maintain confidentiality, meet deadlines, and work accurately.',
-    'Retail experience is advantageous.',
-    'Preferred: Degree or National Diploma in Human Resource Management or currently studying towards one.'
-  ]
-},
+  },
   {
     id: 'engen-business-development-specialist-mining',
     type: 'job',
@@ -231,320 +148,119 @@ const OFFERS = [
       'Advantageous: Lubricants knowledge.',
       'Advantageous: Experience dealing with mine managers.'
     ]
-  },{
-  id: 'ackermans-clerk-reconciliations-fixed-term-contract',
-  type: 'job',
-  company: 'Ackermans',
-  category: 'Jobs',
-  subcategory: 'Finance',
-  title: 'Clerk: Reconciliations (Fixed-Term Contract)',
-  location: 'Ackermans Support Centre, Kuils River, Cape Town, South Africa',
-  employmentType: 'Fixed-Term Contract (12 Months)',
-  posted: '7 July 2026',
-  closingNote: 'Apply as soon as possible',
-  reward: 'Market-related salary and employee benefits',
-
-  desc: 'Ackermans is looking for a Clerk: Reconciliations to join its Finance team on a 12-month fixed-term contract. The successful candidate will prepare and maintain general ledger reconciliations, assist with tax and VAT compliance, resolve reconciliation queries, and ensure accurate financial reporting.',
-
-  payment: 'Applications are submitted through the official Ackermans careers portal.',
-
-  buttonText: 'Apply Now',
-  applyUrl: 'https://careers.ackermans.co.za/jobs/7537203-clerk-reconciliations-fixed-term-contract',
-
-  responsibilities: [
-    'Prepare reconciliations for various balance sheet accounts, including payroll, petty cash, staff purchases, overseas travel, and intercompany loans.',
-    'Investigate, follow up, and resolve outstanding reconciliation items within required timelines.',
-    'Prepare journals and process corrections for reconciling items.',
-    'Ensure all balance sheet accounts are reconciled and agree with the trial balance.',
-    'Maintain and update reconciliation records and account ownership details.',
-    'Assist with monthly VAT, Import VAT, withholding tax, and other tax compliance processes.',
-    'Prepare tax journals, account reconciliations, and compliance documentation.',
-    'Arrange payments to revenue authorities for VAT, Import VAT, and withholding tax.',
-    'Support responses to tax audits, VAT verifications, and revenue authority queries.',
-    'Provide assistance with ad hoc finance, taxation, and reporting requirements.'
-  ],
-
-  steps: [
-    'Click "Apply Now" to open the official Ackermans careers page.',
-    'Complete the online application form and upload your CV together with the required supporting documents.',
-    'Review your application to ensure all information is accurate before submitting.',
-    'Only shortlisted candidates will be contacted regarding the next stage of the recruitment process.'
-  ],
-
-  requirements: [
-    'National Diploma or National Certificate in Accounting or Taxation.',
-    '2–3 years of relevant finance administration experience with strong reconciliation experience.',
-    'Strong financial reconciliation and general ledger knowledge.',
-    'Good understanding of financial administration, accounting principles, tax, and VAT legislation.',
-    'Intermediate to advanced Microsoft Excel skills.',
-    'Excellent numerical ability and strong attention to detail.',
-    'Ability to work independently and as part of a team under pressure and meet deadlines.',
-    'Retail experience is advantageous.',
-    'Experience in a tax-related role is advantageous.',
-    'Preferred: B.Com Accounting or BTech qualification.'
-  ]
-},
+  },
   {
-  id: 'ackermans-personal-assistant-chief-executive-marketing',
-  type: 'job',
-  company: 'Ackermans',
-  category: 'Jobs',
-  subcategory: 'Administration',
-  title: 'Personal Assistant to Chief Executive (Marketing)',
-  location: 'Ackermans Support Centre, Kuils River, Cape Town, South Africa',
-  employmentType: 'Full-time',
-  posted: '7 July 2026',
-  closingNote: 'Apply as soon as possible',
-  reward: 'Market-related salary and employee benefits',
+    id: 'temu-coupon-bundle-30off-1',
+    company: 'Temu',
+    category: 'Discount Offers',
+    subcategory: 'Shopping',
+    title: 'Temu R2,000 Coupon Bundle + 30% Off',
+    reward: 'R2,000 Coupon Bundle + 30% OFF',
+    desc: 'Grab a R2,000 coupon bundle and enjoy 30% off across the Temu app using the promo code below. Great for anyone looking to stock up on everyday essentials at a fraction of the price.',
 
-  desc: 'Ackermans is looking for an experienced Personal Assistant to provide executive support to the Chief Executive of Marketing and the Marketing Leadership Team. The successful candidate will manage executive administration, calendars, travel, meetings, communications, and departmental coordination to ensure the efficient delivery of strategic and operational priorities.',
+    payment: 'Enter code alb757583 at checkout in the Temu app, or apply automatically via the deal link.',
 
-  payment: 'Applications are submitted through the official Ackermans careers portal.',
+    buttonText: 'Get Deal',
+    applyUrl: 'https://temu.to/k/e2h6s670g62',
 
-  buttonText: 'Apply Now',
-  applyUrl: 'https://careers.ackermans.co.za/jobs/7971236-personal-assistant-to-chief-executive-marketing',
+    steps: [
+      'Click "Get Deal" to open the offer in the Temu app or website.',
+      'Add your eligible items to the cart.',
+      'Enter code alb757583 at checkout, or let it apply automatically via the deal link.',
+      'Enjoy up to 30% off with your R2,000 coupon bundle.'
+    ],
 
-  responsibilities: [
-    'Provide comprehensive administrative support to the Chief Executive of Marketing and the Marketing Leadership Team.',
-    'Manage executive diaries, calendars, appointments, and schedule critical business meetings.',
-    'Attend meetings, take minutes, distribute action items, and follow up on outstanding tasks.',
-    'Prepare presentations, reports, and business documentation.',
-    'Manage office administration, filing systems, records, and correspondence.',
-    'Coordinate local and international travel, including bookings, itineraries, and expense reconciliations.',
-    'Arrange departmental meetings, strategy sessions, team-building events, and agency reviews.',
-    'Assist the PR team by managing the PR email inbox, supplier and customer communication, and maintaining records.',
-    'Support expense reconciliations and assist with Fraxion processes where required.',
-    'Maintain professional relationships with internal and external stakeholders while handling confidential information with discretion.'
-  ],
-
-  steps: [
-    'Click "Apply Now" to open the official Ackermans careers page.',
-    'Complete the online application form and upload your CV together with the required supporting documents.',
-    'Review your application before submitting it through the official careers portal.',
-    'Only shortlisted candidates will be contacted regarding the next stage of the recruitment process.'
-  ],
-
-  requirements: [
-    'Grade 12 (Matric).',
-    'Minimum of 5 years of experience as a Personal Assistant or Executive Secretary supporting a Director or Executive.',
-    'Excellent knowledge of Microsoft Word, Excel, PowerPoint, and Outlook.',
-    'Experience coordinating local and international travel arrangements.',
-    'Excellent verbal and written communication skills.',
-    'Strong organisational, administrative, and time management skills.',
-    'Ability to manage confidential information with professionalism and discretion.',
-    'Ability to work independently, manage multiple priorities, and perform under pressure.',
-    'Customer service experience is advantageous.',
-    'Preferred: Secretarial Diploma.'
-  ]
-},
+    requirements: [
+      'Available to new and existing Temu users; terms may vary by account.',
+      'Discount is applied at checkout and final value may vary depending on cart contents.',
+      'Offer is subject to change or expiry without notice.',
+      'Limited to one coupon bundle per account, where applicable.'
+    ]
+  },
   {
-  id: 'ackermans-store-planner',
-  type: 'job',
-  company: 'Ackermans',
-  category: 'Jobs',
-  subcategory: 'Planning',
-  title: 'Store Planner',
-  location: 'Ackermans Support Centre, Kuils River, Cape Town, South Africa',
-  employmentType: 'Full-time',
-  posted: '7 July 2026',
-  closingNote: 'Apply as soon as possible',
-  reward: 'Market-related salary and employee benefits',
+    id: 'temu-coupon-bundle-30off-2',
+    company: 'Temu',
+    category: 'Discount Offers',
+    subcategory: 'Shopping',
+    title: 'Temu Exclusive R2,000 Coupon Bundle (30% Off)',
+    reward: 'R2,000 Coupon Bundle + 30% OFF',
+    desc: 'Claim an exclusive R2,000 coupon bundle and enjoy 30% off on the Temu app. Simply search the promo code in-app or use the direct deal link to get started.',
 
-  desc: 'Ackermans is building its talent network for future Store Planner opportunities. The successful candidate will plan and distribute seasonal and replenishment stock, optimise store performance, support visual merchandising, ensure successful new store launches, and resolve stock-related queries to maximise sales.',
+    payment: 'Search code alb757583 in the Temu app at checkout, or apply automatically via the deal link.',
 
-  payment: 'Applications are submitted through the official Ackermans careers portal.',
+    buttonText: 'Get Deal',
+    applyUrl: 'https://temu.to/k/exe31xqrppg',
 
-  buttonText: 'Apply Now',
-  applyUrl: 'https://careers.ackermans.co.za/jobs/7875620-store-planner',
+    steps: [
+      'Click "Get Deal" to open the offer in the Temu app or website.',
+      'Add your eligible items to the cart.',
+      'Search or enter code alb757583 at checkout, or let it apply automatically via the deal link.',
+      'Enjoy up to 30% off with your R2,000 coupon bundle.'
+    ],
 
-  responsibilities: [
-    'Plan and distribute seasonal stock to maximise sales across stores.',
-    'Manage seasonal and non-seasonal replenishment stock to ensure optimal product availability.',
-    'Develop location plans that support effective product allocation and store clustering.',
-    'Create seasonal and replenishment profiles for the required product categories.',
-    'Provide planning input to support visual merchandising initiatives.',
-    'Analyse store performance and provide timely insights to improve business decisions.',
-    'Ensure new stores are stocked according to approved plans before opening.',
-    'Assist stores with stock-related queries and provide effective solutions.',
-    'Monitor stock movement and identify opportunities to improve inventory performance.',
-    'Work closely with planning, logistics, and retail teams to optimise stock management.'
-  ],
-
-  steps: [
-    'Click "Apply Now" to open the official Ackermans careers page.',
-    'Complete the online application form and upload your CV together with the required supporting documents.',
-    'Submit your application through the official careers portal for consideration in future Store Planner opportunities.',
-    'Only shortlisted candidates will be contacted should a suitable vacancy become available.'
-  ],
-
-  requirements: [
-    'Grade 12 (Matric).',
-    'Minimum of 2–3 years of store planning experience within a clothing retail environment.',
-    'Strong knowledge of seasonal and replenishment planning.',
-    'Experience using planning systems such as Location Planning, JDA Allocation Planning, and/or Just Enough is advantageous.',
-    'Knowledge of logistics, supply chain processes, and cross-dock operations is advantageous.',
-    'Proficiency in Microsoft Word and Excel.',
-    'Advanced Microsoft Excel skills are advantageous.',
-    'Previous store management experience is advantageous.',
-    'National Diploma or Degree in Business, Retail Management, Accounting, or Finance is beneficial.',
-    'Strong analytical, planning, problem-solving, and communication skills.'
-  ]
-},{
-  id: 'ackermans-product-planner-2-portfolios',
-  type: 'job',
-  company: 'Ackermans',
-  category: 'Jobs',
-  subcategory: 'Planning',
-  title: 'Product Planner (2 Portfolios Available)',
-  location: 'Ackermans Support Centre, Kuils River, Cape Town, South Africa',
-  employmentType: 'Full-time',
-  posted: '7 July 2026',
-  closingNote: 'Apply as soon as possible',
-  reward: 'Market-related salary and employee benefits',
-
-  desc: 'Ackermans is looking for experienced Product Planners to develop and execute merchandise planning strategies that drive growth and profitability. You will manage forecasts, replenishment, assortment planning, and business performance while supporting the overall merchandise strategy in a fast-paced retail environment.',
-
-  payment: 'Applications are submitted through the official Ackermans careers portal.',
-
-  buttonText: 'Apply Now',
-  applyUrl: 'https://careers.ackermans.co.za/jobs/7763060-product-planner-2-portfolios-available',
-
-  responsibilities: [
-    'Develop, implement, and manage departmental business plans aligned with the merchandise strategy.',
-    'Manage departmental forecasts to achieve sales growth and profitability targets.',
-    'Prepare and execute merchandise assortment plans that support approved business strategies.',
-    'Ensure sufficient replenishment stock levels to achieve agreed service levels and business objectives.',
-    'Provide accurate and timely merchandise information to minimise risk and maximise business opportunities.',
-    'Monitor product performance and recommend actions to improve sales and profitability.',
-    'Collaborate with buying, logistics, and store teams to optimise merchandise planning.',
-    'Manage planning projects and ensure objectives are delivered successfully where applicable.',
-    'Analyse sales trends, inventory levels, and customer demand to support decision-making.',
-    'Maintain effective communication and collaboration with internal stakeholders across the business.'
-  ],
-
-  steps: [
-    'Click "Apply Now" to open the official Ackermans careers page.',
-    'Complete the online application form and upload your CV together with the required supporting documents.',
-    'Review your application to ensure all information is accurate before submitting.',
-    'Only shortlisted candidates will be contacted regarding the next stage of the recruitment process.'
-  ],
-
-  requirements: [
-    'Grade 12 (Matric).',
-    'Minimum of 3–5 years of product planning experience within a retail or FMCG environment.',
-    'Experience in replenishment and assortment planning.',
-    'Previous store planning experience.',
-    'Previous store management experience (1–2 years) is advantageous.',
-    'Knowledge of the retail merchandise cycle, including buying, planning, logistics, and store operations.',
-    'Experience using merchandise planning systems.',
-    'Strong commercial awareness, analytical ability, and numerical skills.',
-    'Proficiency in Microsoft Word and Excel, with advanced Excel skills being advantageous.',
-    'Preferred: BCom, BSc, National Diploma in Finance, Accounting, Business Science, Internal Auditing, Cost & Management Accounting, or Financial Information Systems.'
-  ]
-},
+    requirements: [
+      'Available to new and existing Temu users; terms may vary by account.',
+      'Discount is applied at checkout and final value may vary depending on cart contents.',
+      'Offer is subject to change or expiry without notice.',
+      'Limited to one coupon bundle per account, where applicable.'
+    ]
+  },
   {
-  id: 'engen-fluidlink-engineer-mining',
-  type: 'job',
-  company: 'Engen Limited',
-  category: 'Jobs',
-  subcategory: 'Engineering',
-  title: 'Fluidlink Engineer – Mining',
-  location: 'Northern Cape, South Africa (Kathu, Kuruman & Hotazel Area)',
-  employmentType: 'Full-time',
-  posted: '7 July 2026',
-  closingNote: 'Closes 5 days after posting date',
-  reward: 'Competitive salary – Engen salary scale',
+    id: 'temu-ultra-low-price-deals',
+    company: 'Temu',
+    category: 'Discount Offers',
+    subcategory: 'Shopping',
+    title: 'Temu Ultra-Low Price Deals',
+    reward: 'Ultra-Low Prices on Top-Quality Items',
+    desc: 'Score top-quality items at ultra-low prices with this exclusive Temu deal. Tap the deal link or search the promo code in the Temu app to unlock these savings.',
 
-  desc: 'Drive Engen Fluidlink Asset Performance Management (APM) services within mining and heavy industrial operations by improving equipment reliability, managing customer relationships, overseeing third-party service providers, and identifying opportunities to grow Fluidlink business across mining customers.',
+    payment: 'Search code alb732871 in the Temu app, or apply automatically via the deal link.',
 
-  payment: 'Closes 5 days after posting – apply via the official Engen careers portal.',
+    buttonText: 'Get Deal',
+    applyUrl: 'https://temu.to/k/espcyvr3uyf',
 
-  buttonText: 'Apply Now',
-  applyUrl: 'https://careers.engenoil.com/job/Johannesburg-Fluidlink-Engineer-Mining/1394973433/',
+    steps: [
+      'Click "Get Deal" to open the offer in the Temu app or website.',
+      'Browse eligible items and add them to your cart.',
+      'Search or enter code alb732871 at checkout, or let it apply automatically via the deal link.',
+      'Enjoy the discounted, ultra-low prices on your order.'
+    ],
 
-  responsibilities: [
-    'Manage lubrication and fluid management programmes across mining operations to improve equipment reliability and production performance.',
-    'Control customer cost centre budgets, monitor KPIs, and maximise return on investment.',
-    'Conduct account reviews with customers and service providers, implementing corrective actions where necessary.',
-    'Identify reliability improvement opportunities through condition monitoring, contamination control, automation, and predictive maintenance.',
-    'Ensure compliance with Engen Fluidlink standards, mining regulations, engineering practices, and contractual agreements.',
-    'Build strong relationships with engineering, production, procurement, HSEQ, and supply chain teams at customer sites.',
-    'Manage third-party contractors to ensure SLA compliance, operational support, and safety performance.',
-    'Support business development by preparing technical proposals, value improvement analyses, RCFA insights, and customer presentations.',
-    'Conduct HSEQ engagements, safety audits, and ensure compliance with mine-specific health and safety requirements.',
-    'Continuously develop technical and commercial knowledge of mining reliability technologies and Engen Fluidlink solutions.'
-  ],
+    requirements: [
+      'Available to new and existing Temu users; terms may vary by account.',
+      'Discount is applied at checkout and final value may vary depending on cart contents.',
+      'Offer is subject to change or expiry without notice.',
+      'Limited availability while stocks or promotional terms last.'
+    ]
+  },
+  {
+    id: 'temu-treasure-trove-mega-savings',
+    company: 'Temu',
+    category: 'Discount Offers',
+    subcategory: 'Shopping',
+    title: 'Temu Treasure Trove Mega Savings',
+    reward: 'Mega Savings Storewide',
+    desc: 'Dive into Temu\u2019s treasure trove of deals with mega savings across the app. Tap the deal link to browse and save on a wide range of products.',
 
-  steps: [
-    'Click "Apply Now" to open the official Engen careers page.',
-    'Complete the online application and upload your CV together with the required supporting documents.',
-    'Submit your application before the closing date, as late applications will not be considered.',
-    'Shortlisted candidates will be contacted by Engen regarding the next stage of the recruitment process.'
-  ],
+    payment: 'Discount applies automatically when you shop via the deal link.',
 
-  requirements: [
-    'NQF Level 7 qualification.',
-    'Minimum 5 years of experience within mining operations, processing plants, smelters, or heavy industrial facilities.',
-    'Strong exposure to asset reliability, production-critical equipment, and plant lubrication systems.',
-    'Advantageous: Certified Tribologist (SAIT).',
-    'Advantageous: Predictive Maintenance certifications (vibration, thermography, lubrication condition monitoring).',
-    'Advantageous: VE-CEM, VE-OCM, or VE-VIP certification.',
-    'Advantageous: SAMTRAC or Mining Supervisory HSEQ qualification.',
-    'Advantageous: Total Fluid Management experience within mining or industrial sectors.',
-    'Knowledge of the lubricants value chain, RCFA, and third-party contractor management.',
-    'Sales and marketing experience within technical or engineering environments is advantageous.'
-  ]
-},{
-  id: 'engen-accountant-supply-wholesale',
-  type: 'job',
-  company: 'Engen Limited',
-  category: 'Jobs',
-  subcategory: 'Finance',
-  title: 'Accountant',
-  location: 'Cape Town, South Africa',
-  employmentType: 'Full-time',
-  posted: '4 July 2026',
-  closingNote: 'Closes 5 days after posting date',
-  reward: 'Competitive salary – Engen salary scale',
+    buttonText: 'Get Deal',
+    applyUrl: 'https://temu.to/k/e4y0hnemyon',
 
-  desc: 'Manage international and local Supply & Wholesale commercial data, customer invoicing, and trading positions to ensure accurate financial accounting, reporting, and cost control. The role supports Engen’s profitability through effective management of trading transactions, treasury support, compliance, and financial reporting.',
+    steps: [
+      'Click "Get Deal" to open the offer in the Temu app or website.',
+      'Browse the featured deals and add eligible items to your cart.',
+      'Complete checkout to apply the available savings.',
+      'Enjoy your discounted order.'
+    ],
 
-  payment: 'Closes 5 days after posting – apply via the official Engen careers portal.',
-
-  buttonText: 'Apply Now',
-  applyUrl: 'https://careers.engenoil.com/job/Cape-Town-Accountant/1411506333/',
-
-  responsibilities: [
-    'Record and settle international and local trading transactions, including imports, exports, affiliates, marine, third-party, and local buy/sell deals.',
-    'Capture vendor invoices, schedule payments, and ensure accurate customer invoicing in accordance with pricing terms.',
-    'Account accurately for import duties, customs and excise levies, and other applicable charges.',
-    'Prepare debit and credit notes and ensure timely customer billing.',
-    'Maintain accurate weighted average costing and transfer costs to the Marketing division.',
-    'Prepare monthly debtor and creditor reconciliations and clear customer, vendor, and GR/IR accounts.',
-    'Support international trading activities by accurately capturing deals within the ETRM system.',
-    'Provide treasury support by ensuring trading deals are appropriately hedged and included in daily exposure reports.',
-    'Monitor departmental expenditure, manage cost controls, and report on budget variances.',
-    'Prepare monthly and ad hoc financial reports while ensuring compliance with company policies, procedures, and audit requirements.'
-  ],
-
-  steps: [
-    'Click "Apply Now" to open the official Engen careers page.',
-    'Complete the online application and upload your CV together with the required supporting documents.',
-    'Submit your application before the closing date as only applications received through the official careers portal will be considered.',
-    'Shortlisted candidates will be contacted by Engen regarding the next stage of the recruitment process.'
-  ],
-
-  requirements: [
-    'NQF Level 7 qualification (Degree in Commercial, Finance, or Accounting).',
-    'Minimum 5 years of experience in an Accounting or Finance environment.',
-    'Experience and knowledge of an Energy Trading and Risk Management (ETRM) system.',
-    'Strong financial accounting, reconciliation, and reporting skills.',
-    'Knowledge of international and local trading transactions.',
-    'Experience with treasury support, budgeting, and cost control.',
-    'Advantageous: Experience and knowledge of SAP.',
-    'Ability to ensure compliance with governance, audit, and financial control requirements.'
-  ]
-},
+    requirements: [
+      'Available to new and existing Temu users; terms may vary by account.',
+      'Discount is applied at checkout and final value may vary depending on cart contents.',
+      'Offer is subject to change or expiry without notice.',
+      'Limited availability while stocks or promotional terms last.'
+    ]
+  }
 ];
 const REFERRALS = [
   {
