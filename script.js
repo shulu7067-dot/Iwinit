@@ -105,7 +105,184 @@ const OFFERS = [
     'Advantageous: Experience and knowledge of SAP.',
     'Ability to ensure compliance with governance, audit, and financial control requirements.'
   ]
-},{
+},
+  {
+  id: 'pick-n-pay-co-ordinator-produce-gqeberha',
+  type: 'job',
+  company: 'Pick n Pay',
+  category: 'Jobs',
+  subcategory: 'Fresh Produce',
+  title: 'Co-Ordinator Produce',
+  location: 'Gqeberha, Eastern Cape, South Africa',
+  employmentType: 'Full-time',
+  posted: '7 July 2026',
+  closingNote: 'Closing date: 17 July 2026',
+  reward: 'Market-related salary and employee benefits',
+
+  desc: 'Pick n Pay is looking for an experienced Co-Ordinator Produce to drive the strategic growth, operational excellence, and commercial performance of the Fresh Produce category. You will oversee category performance through data-driven insights, seasonal planning, supplier collaboration, and effective in-store execution to deliver exceptional freshness, availability, customer satisfaction, and profitability.',
+
+  payment: 'Applications are submitted through the official Pick n Pay Careers portal.',
+
+  buttonText: 'Apply Now',
+  applyUrl: 'https://picknpay.wd3.myworkdayjobs.com/en-US/PNP_Careers/job/Gqeberha/Co-Ordinator-Produce_JR105770',
+
+  responsibilities: [
+    'Execute the Fresh Produce category strategy aligned with customer demand, seasonality, and business growth objectives.',
+    'Drive sales, gross margin, and profitability through assortment planning, pricing strategies, and promotional optimisation.',
+    'Monitor market trends, customer buying behaviour, and competitor activity to improve category performance.',
+    'Maintain high freshness standards, product quality, and shelf life across all stores.',
+    'Oversee grading standards, handling procedures, stock rotation, and waste reduction initiatives.',
+    'Support the development of value-added produce products such as convenience packs and prepared produce.',
+    'Provide operational guidance on stock management, replenishment planning, and inventory optimisation.',
+    'Ensure compliance with food safety legislation, hygiene requirements, and standard operating procedures.',
+    'Analyse sales, margins, waste, shrinkage, and inventory data to identify improvement opportunities.',
+    'Develop dashboards and performance reports to support informed business decisions.',
+    'Partner with Buying, Supply Chain, Marketing, and Store Operations teams to improve product availability and category performance.',
+    'Support merchandising standards, planograms, seasonal displays, signage, and store layouts.',
+    'Assist with promotional planning, performance reporting, and operational documentation.',
+    'Mentor and coach store teams on fresh produce handling, merchandising, and commercial performance.'
+  ],
+
+  steps: [
+    'Click "Apply Now" to open the official Pick n Pay Careers page.',
+    'Complete the online application form.',
+    'Upload your updated CV together with the required supporting documents.',
+    'Review all information before submitting your application.',
+    'Only shortlisted candidates will be contacted regarding the recruitment process.'
+  ],
+
+  requirements: [
+    'Grade 12 (Matric).',
+    'Diploma or Degree in Agriculture, Food Science, or a related field.',
+    '5–7 years of experience in Fresh Produce retail, category management, or store operations.',
+    'Proven experience managing margins, shrinkage, and stock management within a fresh food environment.',
+    'Strong understanding of produce seasonality, grading standards, and supply chain dynamics.',
+    'Knowledge of food safety legislation and fresh produce handling standards.',
+    'Strong commercial and financial acumen.',
+    'Advanced analytical skills with Microsoft Excel, SAP, Power BI, or retail BI systems.',
+    'Strong project management, communication, and stakeholder management skills.',
+    'Excellent understanding of fresh produce handling, merchandising, and quality control.',
+    'Ability to influence operational improvements across multiple stores.',
+    'Customer-focused with a passion for freshness, quality, and visual merchandising.'
+  ]
+},
+  {
+  id: 'pick-n-pay-inventory-manager-boardwalk-mall',
+  type: 'job',
+  company: 'Pick n Pay',
+  category: 'Jobs',
+  subcategory: 'Inventory Management',
+  title: 'Inventory Manager',
+  location: 'Boardwalk Mall, Eastern Cape, South Africa',
+  employmentType: 'Full-time',
+  posted: '7 July 2026',
+  closingNote: 'Closing date: 17 July 2026',
+  reward: 'Market-related salary and employee benefits',
+
+  desc: 'Pick n Pay is looking for an Inventory Manager to implement, monitor, and analyse inventory processes that safeguard store stock integrity. You will identify and report stock-related financial risks, improve stock holding efficiencies, and ensure optimal stock accuracy, availability, and profitability through effective inventory controls and reporting.',
+
+  payment: 'Applications are submitted through the official Pick n Pay Careers portal.',
+
+  buttonText: 'Apply Now',
+  applyUrl: 'https://picknpay.wd3.myworkdayjobs.com/en-US/PNP_Careers/job/Boardwalk-Mall---Eastern-Cape/Inventory-Manager_JR105769',
+
+  responsibilities: [
+    'Execute National, Regional, and Ad Hoc stock count plans.',
+    'Implement effective exit management controls to minimise stock losses.',
+    'Manage Dormant, Obsolete, and Overstock processes to optimise working capital.',
+    'Analyse stock discrepancies and posting variances and recommend corrective actions.',
+    'Ensure all stock movement processes are completed accurately, including Shop Use, Reduce-to-Clear (RTC), Inter-department Transfers, Inter-branch Transfers, and Waste.',
+    'Print, analyse, and interpret daily and weekly stock reports.',
+    'Confirm stock availability for Dormant, Obsolete, and Exit stock.',
+    'Identify and report merchandising and administrative control deviations.',
+    'Monitor compliance with inventory movement processes and ensure corrective actions are implemented.',
+    'Verify stock reports and system postings with Store Management.',
+    'Maintain system integrity and ensure stock data accuracy.',
+    'Plan and coordinate ad hoc stock counts based on operational requirements.',
+    'Manage the Stock Availability Programme on a daily and weekly basis.',
+    'Coach, supervise, and support inventory and departmental staff on stock control processes.',
+    'Promote accountability and compliance with Standard Operating Procedures (SOPs).'
+  ],
+
+  steps: [
+    'Click "Apply Now" to open the official Pick n Pay Careers page.',
+    'Complete the online application form.',
+    'Upload your updated CV together with the required supporting documents.',
+    'Review your application to ensure all information is accurate before submitting.',
+    'Only shortlisted candidates will be contacted regarding the recruitment process.'
+  ],
+
+  requirements: [
+    'Grade 12 (Matric).',
+    '2–3 years of experience in an inventory control or stock management role.',
+    'Strong understanding of stock counts, stock movements, and loss prevention processes.',
+    'Experience working with retail systems and reporting tools such as SAP or similar.',
+    'Proven ability to analyse data and identify root causes of stock variances.',
+    'Exceptional attention to detail and accuracy.',
+    'Strong analytical and problem-solving skills.',
+    'Commercial and business acumen.',
+    'Excellent planning, organisational, and prioritisation skills.',
+    'Strong interpersonal and communication skills.',
+    'Customer-focused with a commitment to service excellence.'
+  ]
+},
+  {
+  id: 'pick-n-pay-manager-in-training-brackenfell',
+  type: 'job',
+  company: 'Pick n Pay',
+  category: 'Jobs',
+  subcategory: 'Butchery',
+  title: 'Manager in Training',
+  location: 'Brackenfell, Western Cape, South Africa',
+  employmentType: 'Full-time',
+  posted: '7 July 2026',
+  closingNote: 'Closing date: 13 July 2026',
+  reward: 'Market-related salary and employee benefits',
+
+  desc: 'Pick n Pay is looking for a Manager in Training to support the management of its Butchery department. This role is ideal for an experienced Blockman with leadership potential who is passionate about delivering high-quality meat products, maintaining food safety standards, leading a team, and driving departmental sales and profitability.',
+
+  payment: 'Applications are submitted through the official Pick n Pay Careers portal.',
+
+  buttonText: 'Apply Now',
+  applyUrl: 'https://picknpay.wd3.myworkdayjobs.com/en-US/PNP_Careers/job/Brackenfell---Western-Cape/Manager-in-Training_JR105766-1',
+
+  responsibilities: [
+    'Oversee the day-to-day operations of the butchery department.',
+    'Manage inventory, stock ordering, and product availability.',
+    'Ensure all meat handling, storage, and display practices comply with food safety regulations and company standards.',
+    'Provide excellent customer service by offering expert product advice and customised meat cuts.',
+    'Develop strategies to increase sales, reduce waste, and maximise department profitability.',
+    'Lead, train, mentor, and motivate butchery staff to achieve high performance.',
+    'Maintain exceptional product quality and merchandising standards.',
+    'Ensure all company policies, procedures, and operational standards are followed.',
+    'Monitor stock levels and minimise shrinkage and waste.',
+    'Support the overall success and profitability of the butchery department.'
+  ],
+
+  steps: [
+    'Click "Apply Now" to open the official Pick n Pay Careers page.',
+    'Complete the online application form.',
+    'Upload your updated CV together with the required supporting documents.',
+    'Review your application before submitting.',
+    'Only shortlisted candidates will be contacted regarding the recruitment process.'
+  ],
+
+  requirements: [
+    'Grade 12 (Matric).',
+    'Proven experience as a Blockman.',
+    '2–3 years of supervisory experience in a retail or butchery environment.',
+    'Extensive knowledge of meat cuts, butchery techniques, and food safety practices.',
+    'Strong leadership skills with the ability to motivate and develop a team.',
+    'Excellent customer service skills with a passion for delivering quality products.',
+    'Experience managing inventory and reducing waste within a butchery.',
+    'Strong organisational and planning skills.',
+    'Good business acumen.',
+    'Excellent attention to detail.',
+    'Strong communication and interpersonal skills.',
+    'Customer-focused with the ability to influence confidently, fairly, and professionally.'
+  ]
+},
+  {
   id: 'ackermans-hr-administrator-maternity-cover',
   type: 'job',
   company: 'Ackermans',
