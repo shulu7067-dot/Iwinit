@@ -56,6 +56,37 @@ const OFFERS = [
     ]
   },
   {
+  id: 'temu-affiliate',
+  company: 'Temu',
+  category: 'Referral Program',
+  subcategory: 'Affiliate Marketing',
+  title: 'Temu Affiliate Program',
+  reward: 'Up to 30% Commission',
+
+  desc: 'Join the Temu Affiliate Program and earn commissions by referring new affiliates. Share your invitation link or invitation code and receive rewards when eligible users successfully register and qualify.',
+
+  payment: 'Commission and promotional rewards are paid according to Temu Affiliate Program terms and campaign conditions.',
+
+  buttonText: 'Sign Up',
+  applyUrl: 'https://www.temu.com/affiliate_article_center.html?_bg_fs=1&_x_ads_channel=kol_affiliate&_x_vst_scene=adg&_x_campaign=affiliate&_x_cid=4063237254kol_affiliate&_x_share_id=&_x_adg_shr_id=46d632fad47149eca46ec13a44e824ec&_x_ads_csite=share&_x_ns_adg_stid=5af027286fda4fcd_nm8xevc&_x_sessn_id=pxunhk4wm3&refer_page_name=affiliate_coin&refer_page_id=24745_1783410546422_kc62cc4fbc&refer_page_sn=24745',
+
+  steps: [
+    'Create or sign in to your Temu account.',
+    'Join the Temu Affiliate Program.',
+    'Share your affiliate invitation link with others.',
+    'If needed, users can enter your invitation code: inb154757.',
+    'Earn commission and promotional rewards when eligible referrals successfully register and meet Temu requirements.'
+  ],
+
+  requirements: [
+    'A valid Temu account is required.',
+    'Only genuine referrals qualify.',
+    'Rewards are subject to Temu Affiliate Program terms.',
+    'Commission is earned after qualifying referral actions are completed.',
+    'Invitation Code: inb154757'
+  ]
+},
+  {
     id: 'engen-business-planning-analysis-manager',
     type: 'job',
     company: 'Engen Limited',
