@@ -54,6 +54,54 @@ const OFFERS = [
       'Referral rewards depend on successful completion.',
       'Payments are made according to StreetScout\u2019s payout schedule.'
     ]
+  },
+  {
+    id: 'engen-business-planning-analysis-manager',
+    type: 'job',
+    company: 'Engen Limited',
+    category: 'Jobs',
+    subcategory: 'Finance',
+    title: 'Business Planning & Analysis Manager',
+    location: 'Cape Town, South Africa',
+    employmentType: 'Full-time',
+    posted: '7 July 2026',
+    closingNote: 'Closes 5 days after posting date',
+    reward: 'Competitive salary \u2013 Engen salary scale',
+
+    desc: 'To provide planning, budgeting & forecasting and decision support for the division with specific focus on performance measurement & management to enable achievement of business objectives.',
+
+    payment: 'Closes 5 days after posting \u2013 apply via the official Engen careers portal.',
+
+    buttonText: 'Apply Now',
+    applyUrl: 'https://careers.engenoil.com/job/Cape-Town-Business-Planning-&-Analysis-Manager/1392183333/',
+
+    responsibilities: [
+      'Plan, coordinate and consolidate the Division\u2019s business plans, budgets and OPEX/CAPEX forecasts in line with Group guidelines and timetables.',
+      'Consolidate, analyze and report financial and management results to enable effective business decisions and measure performance.',
+      'Perform analysis and interpretation of Opex and Capex performance, identify problem areas and recommend corrective action to management.',
+      'Manage the monthly capital expenditure process with Engineering and project administration teams, ensuring assets under construction are capitalized correctly.',
+      'Maintain Asset Register integrity and balance sheet account integrity, including iPPM tracking and reconciliations.',
+      'Ensure audit requirements are met and drive process and control improvements.',
+      'Oversee OPEX and CAPEX for joint ventures, ensuring alignment with JV partners\u2019 budgets, timelines and governance frameworks.',
+      'Interact with customers, service providers and contractors to ensure deliverables are met.',
+      'Engage in talent, staff performance and resource management to promote capability development.'
+    ],
+
+    steps: [
+      'Click "Apply Now" to open the official Engen careers page for this role.',
+      'Complete and submit the online application with your CV and supporting documents before the closing date.',
+      'Applications are only considered if submitted via the official channel and manner requested.',
+      'Shortlisted candidates will be contacted by Engen for the next stage of the recruitment process.'
+    ],
+
+    requirements: [
+      'NQF Level 7 (Degree in Finance / Commerce).',
+      '7 years\u2019 Finance experience in Business Planning / Performance Measurement.',
+      'Sound knowledge of financial principles.',
+      'Advantageous: CA (SA) / CIMA.',
+      'Advantageous: Advanced Excel skills.',
+      'Advantageous: Experience in an operations environment.'
+    ]
   }
 ];
 const REFERRALS = [
@@ -90,8 +138,52 @@ function renderOffers(list) {
   empty.style.display = 'none';
 
   list.forEach(offer => {
-    const code = generateTrackingCode();
     const card = document.createElement('article');
+
+    if (offer.type === 'job') {
+      card.className = 'offer-card job-card';
+      const reqPreview = (offer.requirements || []).slice(0, 3);
+      card.innerHTML = `
+        <div class="job-ribbon">Job</div>
+        <div class="offer-top">
+          <div class="offer-logo job-logo">${initials(offer.company)}</div>
+          <div>
+            <div class="offer-category">${offer.category} · ${offer.company}</div>
+          </div>
+        </div>
+        <div class="offer-body">
+          <h3>${offer.title}</h3>
+          <div class="job-meta">
+            <span class="job-pill">📍 ${offer.location}</span>
+            <span class="job-pill">${offer.employmentType}</span>
+          </div>
+          <p>${offer.desc}</p>
+        </div>
+        <div class="job-requirements">
+          <span class="label">Requirements</span>
+          <ul>
+            ${reqPreview.map(r => `<li>${r}</li>`).join('')}
+          </ul>
+        </div>
+        <div class="job-footer">
+          <div>
+            <span class="label">Salary</span>
+            <span class="value">${offer.reward}</span>
+          </div>
+          <div>
+            <span class="label">Closing</span>
+            <span class="value">${offer.closingNote || ''}</span>
+          </div>
+        </div>
+        <div class="offer-actions">
+          <a class="btn btn-primary" href="${offer.applyUrl}" target="_blank" rel="noopener">${offer.buttonText || 'Apply Now'}</a>
+          <a class="btn btn-secondary" href="offer.html?id=${offer.id}">Read More</a>
+        </div>
+      `;
+      grid.appendChild(card);
+      return;
+    }
+
     card.className = 'offer-card';
     card.innerHTML = `
       <div class="offer-top">

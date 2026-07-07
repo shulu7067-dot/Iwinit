@@ -46,8 +46,10 @@
 
     <h1 id="title"></h1>
 
+    <div class="job-meta" id="jobMeta" style="display:none; margin: 4px 0 16px;"></div>
+
     <div class="reward-card">
-        <h2>Reward</h2>
+        <h2 id="rewardLabel">Reward</h2>
         <p id="reward"></p>
     </div>
 
@@ -133,6 +135,11 @@
         </div>
     </div>
 
+    <section id="responsibilitiesSection" style="display:none;">
+        <h2>Key Responsibilities</h2>
+        <ul id="responsibilities"></ul>
+    </section>
+
     <section>
         <h2>Requirements</h2>
         <ul id="requirements"></ul>
@@ -203,6 +210,26 @@ if (offer) {
 
     document.getElementById("requirements").innerHTML =
         offer.requirements.map(req => `<li>${req}</li>`).join("");
+
+    if (offer.type === "job") {
+        document.getElementById("rewardLabel").textContent = "Salary";
+
+        const metaEl = document.getElementById("jobMeta");
+        metaEl.style.display = "flex";
+        metaEl.style.flexWrap = "wrap";
+        metaEl.style.gap = "8px";
+        metaEl.innerHTML = `
+            <span class="job-pill">📍 ${offer.location}</span>
+            <span class="job-pill">${offer.employmentType}</span>
+            ${offer.closingNote ? `<span class="job-pill">🗓 ${offer.closingNote}</span>` : ""}
+        `;
+
+        if (offer.responsibilities && offer.responsibilities.length) {
+            document.getElementById("responsibilitiesSection").style.display = "block";
+            document.getElementById("responsibilities").innerHTML =
+                offer.responsibilities.map(r => `<li>${r}</li>`).join("");
+        }
+    }
 
     const applyButton = document.getElementById("applyLink");
 
